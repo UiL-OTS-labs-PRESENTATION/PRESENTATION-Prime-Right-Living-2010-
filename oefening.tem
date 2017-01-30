@@ -1,0 +1,17 @@
+# Template Trials 
+
+# Aanbieden van paren van lichaamsdelen voor een trial met feedback tijdens de oefening
+
+trial {
+		trial_type = first_response;
+		incorrect_feedback = wrong;
+		correct_feedback = right;
+		nothing {};  code = "begin_trial"; # 
+		sound $woord; code = $woordcode;
+		target_button = $antw;    # subject should press button 1 or 2
+		code = $antw;
+		nothing {}; delta_time = 4000; code = "end_trial";
+};
+
+
+#End
